@@ -386,31 +386,6 @@
     border-bottom:1px dashed var(--border);
   }
 
-  .stats{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(128px,1fr));
-    gap:10px;
-    margin:0 0 20px;
-  }
-  .stat{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:10px;
-    padding:12px 14px;
-  }
-  .stat .n{
-    font-family:"IBM Plex Mono", monospace;
-    font-weight:600;
-    font-size:1.15rem;
-    color:var(--accent-strong);
-    display:block;
-  }
-  .stat .l{
-    font-size:.76rem;
-    color:var(--text-muted);
-    margin-top:2px;
-    display:block;
-  }
 
   .block{margin-bottom:20px;}
   .block:last-child{margin-bottom:0;}
@@ -642,7 +617,7 @@
     <div class="summary-card">
       <p>近6年外企科技学术出版及科研文献数据库工作经验，2026年主导AI4Science人才对接业务从0到1搭建；擅长前沿领域学者合作运营、高校院系关系拓展，以及连接学术资源与企业需求的双向撮合机制设计。核心优势：</p>
       <ul>
-        <li><b>全球学者资源与分层运营：</b>过往累计建联十几万学者，与约2000名高影响力学者保持合作，覆盖可持续发展、AI、大数据、智能交通、能源、经济等领域；在Audax Lab期间从零搭建学者池，现有记录<b class="num">3,914</b>条，能精准识别不同层级学者的学术价值与合作潜力，快速匹配校企合作需求。</li>
+        <li><b>全球学者资源与分层运营：</b>过往累计建联十几万学者，与约2000名高影响力学者保持合作，覆盖可持续发展、AI、大数据、智能交通、能源、经济等领域；在Audax Lab期间从零搭建学者池，现有记录近<b class="num">4,000</b>条，能精准识别不同层级学者的学术价值与合作潜力，快速匹配校企合作需求。</li>
         <li><b>高校接洽与校园合作：</b>参加校园招聘，赴高校开展作者培训会、宣讲会，与院系老师直接接洽，促成多场校园活动落地。</li>
         <li><b>跨学科项目全周期管理：</b>主导策划并上线约100个热点研究专栏，累计协调学者3w+，直接管理投稿2k+篇，二次合作率超50%。</li>
         <li><b>业务与系统从0到1搭建：</b>在Audax Lab主导设计学者/企业双向撮合机制，并搭建三个共享同一数据源的系统支撑团队运营，具备独立规划业务打法与落地基础设施的能力。</li>
@@ -669,76 +644,43 @@
 
         <p class="thesis">从零搭建AI4S人才对接业务：建立全球学者供给池和企业需求池，设计双向撮合机制，并主导搭建三个共享同一数据源的系统，支撑团队运营。</p>
 
-        <div class="stats">
-          <div class="stat"><span class="n">3,914</span><span class="l">学者池记录</span></div>
-          <div class="stat"><span class="n">3,462</span><span class="l">QS2026前30高校学者</span></div>
-          <div class="stat"><span class="n">89%</span><span class="l">邮箱覆盖率 (3,467/3,914)</span></div>
-          <div class="stat"><span class="n">81</span><span class="l">企业池，覆盖六大方向</span></div>
-        </div>
-
         <div class="block">
           <h4><span class="b-idx">1</span> 业务规划与目标管理</h4>
           <ul>
-            <li>基于Lab的项目制合作模式，设计学者端和企业端的合作形态与收费逻辑，覆盖三种模式：学者带成熟项目由Lab提供算力/人力/资金、Lab发起项目邀请匹配学者加入、与国内外科技企业联合发起项目；业务覆盖人才撮合、数据合成与专家评测、顾问服务三类。</li>
-            <li>对标Mercor、Surge AI、Handshake AI等海外头部平台，确定以AI4S为切入垂类的差异化定位。</li>
-            <li>制定季度工作计划，按"企业拓展/专家拓展 × 邮件/社媒/熟人网络"拆解渠道目标和漏斗指标；带领3人小组，负责目标设定、过程监督、周同步和月度复盘。</li>
+            <li>从0到1设计学者/企业双向合作模式（学者带项目、Lab发起项目、联合企业发起项目），业务覆盖人才撮合、数据合成与专家评测、顾问服务三类。</li>
+            <li>带领3人小组完成业务规划、渠道拓展与季度复盘。</li>
           </ul>
         </div>
 
         <div class="block">
           <h4><span class="b-idx">2</span> 学者供给侧建设</h4>
           <ul>
-            <li>设计专家画像字段、学科分级体系，以及四维学术影响力评分模型（顶会顶刊 / h-index / 合作者网络 / GitHub）。</li>
-            <li>按本土学者、海外华人学者、国际学者三类分层管理学者池；统筹学术数据库筛查（WOS / Scopus / OpenAlex）、领英精准筛选、熟人转介绍等招募渠道，并定向整理高潜学者榜单。</li>
-            <li>渠道触达领英约200人、小红书约150人；<b>Tier0最高优先级方向（CS + 模型训练/后训练）学者2,425人</b>，学者池覆盖约27所名校，如Stanford、MIT、Harvard、Oxford、Cambridge、清华、北大、复旦等。</li>
+            <li>建立学者画像与四维学术影响力评分体系，通过学术数据库、领英、熟人转介绍等渠道招募。</li>
+            <li>学者池现已覆盖全球30余所顶尖高校近4,000人。</li>
           </ul>
         </div>
 
         <div class="block">
           <h4><span class="b-idx">3</span> 企业需求侧拓展</h4>
           <ul>
-            <li>搭建企业池（81家），覆盖大模型/Agent、AI4Science/生物医药、生成视觉/3D、材料/化学、具身智能/机器人、数学/物理/量子六大方向；按行业、需求、融资阶段建档，设计企业需求与学者方向的匹配逻辑。</li>
-            <li>设计B端获客打法：VC转介绍、按地区自动切换中英文的合作邮件、"企业出题挑战赛"等规模化破冰方案。</li>
+            <li>搭建覆盖大模型/AI4Science/生物医药/材料化学/具身智能/数学物理六大方向的企业池（80+家）。</li>
+            <li>设计企业需求与学者方向的匹配逻辑及B端获客打法。</li>
           </ul>
         </div>
 
         <div class="block">
           <h4><span class="b-idx">4</span> 社媒运营与社区活动</h4>
           <ul>
-            <li>统筹领英、小红书双平台：领英面向海外学者和企业决策人做精准连接；小红书以"专家网络合作"为账号定位，规划内容支柱，带领团队按周稳定产出。</li>
-            <li>策划领英线上沙龙系列，推进前沿研究者闭门会，设计"顺序邀约、以已确认嘉宾背书"的邀约策略。</li>
+            <li>统筹领英、小红书双平台运营，面向海外学者和企业决策人做精准连接。</li>
+            <li>策划线上沙龙及闭门交流活动，提升机构影响力。</li>
           </ul>
         </div>
 
         <div class="block">
           <h4><span class="b-idx">5</span> 系统搭建</h4>
-          <p style="margin:0 0 10px; font-size:.94rem; color:var(--text-muted);">主导设计并搭建三个互通系统，让团队在同一份数据上协作：</p>
-          <details class="subgroup">
-            <summary>ScholarOS（内部CRM）</summary>
-            <div class="subbody">
-              <ul>
-                <li>学者/企业一体化管理，包含触达节奏管理、基于OpenAlex的信息自动补全与学者裂变检索、企业↔学者匹配。</li>
-                <li>设计字段级安全写入接口，多个站点共用一份数据时互不覆盖。</li>
-                <li>支持PDF/图片/文字等多格式简历自动解析入库：精确匹配（姓名+邮箱）自动补全既有记录字段；模糊匹配（姓名相同但机构不同等情况）弹窗人工确认合并方式，避免误覆盖。</li>
-              </ul>
-            </div>
-          </details>
-          <details class="subgroup">
-            <summary>Audax Fellow（对外学者社区站）</summary>
-            <div class="subbody">
-              <ul>
-                <li>展示学者社区并开放自助申请入驻，申请直接进入ScholarOS审核队列。</li>
-              </ul>
-            </div>
-          </details>
-          <details class="subgroup">
-            <summary>AI4S工作台（对外市场素材站）</summary>
-            <div class="subbody">
-              <ul>
-                <li>用于学者合作评估和潜在合作企业评估；学者↔企业配对必须经过人工核实才正式入库，关键词初筛结果只作为线索。</li>
-              </ul>
-            </div>
-          </details>
+          <ul>
+            <li>主导设计并搭建三个数据互通的系统，支撑团队协作：ScholarOS（内部学者/企业一体化管理CRM）、Audax Fellow（对外学者社区站）、AI4S工作台（对外市场素材站）。</li>
+          </ul>
         </div>
         </div>
       </details>
