@@ -192,7 +192,6 @@
     color:var(--text);
     user-select:text;
   }
-  .contact-chip:hover .chip-value,
   .contact-chip.revealed .chip-value{
     display:inline;
   }
@@ -212,7 +211,6 @@
     text-decoration:none;
     padding:0;
   }
-  .contact-chip:hover .chip-btn,
   .contact-chip.revealed .chip-btn{
     display:inline-flex;
   }
@@ -632,9 +630,8 @@
         <button type="button" class="chip-btn copy-btn" data-copy="0815nicolewang@gmail.com" aria-label="复制邮箱地址" title="复制">📋</button>
       </div>
       <div class="contact-chip">
-        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><rect width="24" height="24" rx="4" fill="var(--accent-strong)"/><path fill="#fff" d="M7.12 9.4H4.5v9.7h2.62V9.4zM5.81 8.2a1.52 1.52 0 1 0 0-3.04 1.52 1.52 0 0 0 0 3.04zM19.5 13.6c0-2.6-1.4-3.8-3.26-3.8-1.5 0-2.17.82-2.55 1.4V9.4h-2.62c.03.7 0 9.7 0 9.7h2.62v-5.42c0-.29.02-.58.11-.79.24-.58.78-1.19 1.7-1.19 1.2 0 1.68.91 1.68 2.25v5.15h2.62V13.6z"/></svg></span>
+        <a class="icon" href="https://www.linkedin.com/in/nicole-wang-097863427/" target="_blank" rel="noopener" aria-label="打开领英主页" title="打开领英主页"><svg viewBox="0 0 24 24" width="16" height="16"><rect width="24" height="24" rx="4" fill="var(--accent-strong)"/><path fill="#fff" d="M7.12 9.4H4.5v9.7h2.62V9.4zM5.81 8.2a1.52 1.52 0 1 0 0-3.04 1.52 1.52 0 0 0 0 3.04zM19.5 13.6c0-2.6-1.4-3.8-3.26-3.8-1.5 0-2.17.82-2.55 1.4V9.4h-2.62c.03.7 0 9.7 0 9.7h2.62v-5.42c0-.29.02-.58.11-.79.24-.58.78-1.19 1.7-1.19 1.2 0 1.68.91 1.68 2.25v5.15h2.62V13.6z"/></svg></a>
         <span class="chip-value">linkedin.com/in/nicole-wang-097863427</span>
-        <a class="chip-btn" href="https://www.linkedin.com/in/nicole-wang-097863427/" target="_blank" rel="noopener" aria-label="打开领英主页" title="打开领英主页">↗</a>
         <button type="button" class="chip-btn copy-btn" data-copy="https://www.linkedin.com/in/nicole-wang-097863427/" aria-label="复制领英链接" title="复制">📋</button>
       </div>
     </div>
@@ -983,7 +980,7 @@
   // contact chips: tap/hover reveal + copy
   document.querySelectorAll('.contact-chip').forEach(function(chip){
     chip.addEventListener('click', function(e){
-      if(e.target.closest('.chip-btn')) return;
+      if(e.target.closest('a, button')) return;
       chip.classList.toggle('revealed');
     });
   });
