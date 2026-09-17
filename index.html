@@ -335,10 +335,8 @@
   }
   .job-head{
     display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    gap:8px 16px;
-    align-items:baseline;
+    flex-direction:column;
+    gap:6px;
     margin-bottom:4px;
   }
   .job-head .job-title{
@@ -354,10 +352,21 @@
     margin:0;
   }
   .job-head .when{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
     font-family:"IBM Plex Mono", monospace;
-    font-size:.78rem;
+    font-size:.76rem;
+    letter-spacing:.03em;
     color:var(--job-accent, var(--text-faint));
     white-space:nowrap;
+  }
+  .job-head .when::before{
+    content:"";
+    width:7px; height:7px;
+    border-radius:50%;
+    background:var(--job-accent, var(--text-faint));
+    flex:none;
   }
   .job .place{
     color:var(--text-muted);
@@ -634,8 +643,8 @@
       <details class="job" open style="--job-accent:var(--accent); --job-tint:var(--accent-tint);">
         <summary>
           <div class="job-head">
-            <div class="job-title"><span class="job-chevron"></span><h3>Audax Lab · 学术生态负责人</h3><span class="job-current-badge">现任</span></div>
             <span class="when num">2026-08 — 至今</span>
+            <div class="job-title"><span class="job-chevron"></span><h3>Audax Lab · 学术生态负责人</h3><span class="job-current-badge">现任</span></div>
           </div>
           <p class="place">北京</p>
           <p class="teaser">AI for Science人才与协作平台机构，团队汇聚全球30余所顶尖高校研究者。</p>
@@ -690,8 +699,8 @@
       <details class="job" style="--job-accent:var(--job-teal); --job-tint:var(--job-teal-tint);">
         <summary>
           <div class="job-head">
-            <div class="job-title"><span class="job-chevron"></span><h3>东壁科技数据有限责任公司 · 市场部：商务经理【高校合作】</h3></div>
             <span class="when num">2025-04 — 2025-10</span>
+            <div class="job-title"><span class="job-chevron"></span><h3>东壁科技数据有限责任公司 · 市场部：商务经理【高校合作】</h3></div>
           </div>
           <p class="place">北京</p>
           <p class="teaser">科技文献数据库高校合作拓展，在职期间新增20+家机构客户。</p>
@@ -711,8 +720,8 @@
       <details class="job" style="--job-accent:var(--gold); --job-tint:var(--gold-tint);">
         <summary>
           <div class="job-head">
-            <div class="job-title"><span class="job-chevron"></span><h3>曼迪匹艾（北京）科技服务有限公司 · Editor & Team leader【学术合作 & 团队负责人】</h3></div>
             <span class="when num">2019-11 — 2024-10</span>
+            <div class="job-title"><span class="job-chevron"></span><h3>曼迪匹艾（北京）科技服务有限公司 · Editor & Team leader【学术合作 & 团队负责人】</h3></div>
           </div>
           <p class="place">北京</p>
           <p class="teaser">5年全球学术合作与期刊运营，管理20人团队，主导100+热点专栏策划。</p>
@@ -807,8 +816,8 @@
       <details class="job" style="--job-accent:var(--job-rose); --job-tint:var(--job-rose-tint);">
         <summary>
           <div class="job-head">
-            <div class="job-title"><span class="job-chevron"></span><h3>北京方源房地产咨询服务有限公司 · 交易流程咨询顾问（业务运营）</h3></div>
             <span class="when num">2015-06 — 2019-10</span>
+            <div class="job-title"><span class="job-chevron"></span><h3>北京方源房地产咨询服务有限公司 · 交易流程咨询顾问（业务运营）</h3></div>
           </div>
           <p class="teaser">B/C端交易全流程运营，主导300+笔交易管理与经纪人培训体系。</p>
         </summary>
